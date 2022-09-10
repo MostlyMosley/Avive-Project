@@ -1,0 +1,18 @@
+<div class="sidebar-wrapper">
+  <div class="logo">
+    <a href="#" class="simple-text logo-normal" style="max-height: 48px">
+      <div style="display: flex; justify-content: center" class="logo-image-small">
+        <img style="max-height: 40px" src="../../../../assets/img/png/Black-logo-no-background.png">
+      </div>
+    </a>
+
+  </div>
+  <ul class="nav">
+    <li *ngFor="let navLink of navMenu" routerLinkActive="active">
+      <a [routerLink]="navLink.route" style="display: flex; flex-direction: row; align-items: center;">
+        <mat-icon style="vertical-align: middle; margin: 10px">{{navLink.icon}}</mat-icon>
+        <p>{{navLink.label}}</p>
+      </a>
+    </li>
+  </ul>
+</div>
