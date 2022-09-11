@@ -9,9 +9,9 @@
   </div>
   <ul class="nav">
     <li *ngFor="let navLink of navMenu" routerLinkActive="active">
-      <a [routerLink]="navLink.route" style="display: flex; flex-direction: row; align-items: center;">
+      <a routerLink="{{'/'+navLink.path}}" style="display: flex; flex-direction: row; align-items: center;">
         <mat-icon style="vertical-align: middle; margin: 10px">{{navLink.icon}}</mat-icon>
-        <p>{{navLink.label}}</p>
+        <p>{{navLink.title}}</p>
       </a>
     </li>
   </ul>

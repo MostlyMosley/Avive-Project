@@ -9,18 +9,24 @@ import { FixedPluginModule} from './shared/fixedplugin/fixedplugin.module';
 import { AppComponent } from './app.component';
 import { AppRoutes } from './app.routing';
 import { MainLayoutComponent } from './layouts/main-layout/main-layout.component';
+import { AdminComponent } from './pages/admin/admin.component';
+import { CalendarComponent } from './pages/calendar/calendar.component';
+import { ProfileComponent } from './pages/profile/profile.component';
+import { TrackingComponent } from './pages/tracking/tracking.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainLayoutComponent
+    MainLayoutComponent,
+    AdminComponent,
+    CalendarComponent,
+    ProfileComponent,
+    TrackingComponent
   ],
   imports: [
     BrowserAnimationsModule,
-    RouterModule.forRoot(AppRoutes,{
-      useHash: true
-    }),
+    RouterModule.forRoot(AppRoutes),
     SidenavModule,
     NavbarModule,
     ToastrModule.forRoot(),

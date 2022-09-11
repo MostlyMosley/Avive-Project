@@ -1,6 +1,6 @@
 {
-  "name": "paper-dashboard-angular",
-  "version": "2.3.0",
+  "name": "avive-project",
+  "version": "1.0.0",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
@@ -8,8 +8,7 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start"
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {

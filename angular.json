@@ -148,14 +148,13 @@
       }
     }
   },
-  "defaultProject": "pd-free-angularcli",
   "schematics": {
     "@schematics/angular:component": {
-      "prefix": "app",
-      "styleext": "scss"
+      "prefix": "avive",
+      "style": "scss"
     },
     "@schematics/angular:directive": {
-      "prefix": "app"
+      "prefix": "avive"
     }
   },
   "cli": {
